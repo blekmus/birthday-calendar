@@ -1,0 +1,6 @@
+google_api_python_client==2.65.0
+google_auth_oauthlib==0.5.3
+icalendar==5.0.0
+protobuf==4.21.8
+python-dotenv==0.21.0
+requests==2.25.1

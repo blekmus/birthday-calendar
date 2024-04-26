@@ -135,7 +135,7 @@ def main():
     contacts = format_contacts(get_contacts())
     calendar = create_ical(contacts)
 
-    with open("/var/www/public/birthday.ics", "wb") as file:
+    with open(os.environ['SAVE_PATH'], "wb") as file:
         file.write(calendar)
 
     requests.get(os.environ["HEALTH_CHECK_URL"])
